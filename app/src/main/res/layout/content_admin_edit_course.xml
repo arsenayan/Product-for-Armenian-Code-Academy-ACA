@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	xmlns:fresco = "http://schemas.android.com/apk/res-auto"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+	app:layout_behavior = "@string/appbar_scrolling_view_behavior">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content">
+
+		<com.facebook.drawee.view.SimpleDraweeView
+			android:id = "@+id/imageView"
+			android:layout_width = "@dimen/img_width_height"
+			android:layout_height = "@dimen/img_width_height"
+			android:layout_margin = "8dp"
+			app:placeholderImage = "@drawable/photo_icon"
+			fresco:actualImageScaleType = "focusCrop"
+			fresco:fadeDuration = "300"
+			fresco:layout_constraintLeft_toLeftOf = "parent"
+			fresco:layout_constraintTop_toTopOf = "parent"
+			fresco:placeholderImageScaleType = "center"
+			fresco:roundAsCircle = "true"
+			fresco:roundingBorderColor = "@color/colorPrimaryDark"
+			fresco:roundingBorderWidth = "2dp" />
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:layout_width = "0dp"
+			android:layout_height = "wrap_content"
+			android:layout_marginStart = "12dp"
+			android:layout_marginTop = "8dp"
+			android:layout_marginEnd = "12dp"
+			app:layout_constraintLeft_toRightOf = "@+id/imageView"
+			app:layout_constraintRight_toRightOf = "parent"
+			app:layout_constraintTop_toTopOf = "parent">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id = "@+id/admin_edit_courseName_id"
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:hint = "@string/course_name"
+				android:singleLine = "true"
+				android:textSize = "18sp"
+				tools:text = "course name" />
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<TextView
+			android:id = "@+id/admin_lecturerEng_TV_id"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_margin = "8dp"
+			android:text = "@string/lecturer"
+			android:textSize = "12sp"
+			app:layout_constraintLeft_toLeftOf = "parent"
+			app:layout_constraintTop_toBottomOf = "@+id/imageView" />
+
+		<AutoCompleteTextView
+			android:id = "@+id/spinner_person"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:layout_marginStart = "12dp"
+			android:layout_marginTop = "5dp"
+			android:layout_marginEnd = "12dp"
+			android:completionHint = "Select person"
+			android:completionThreshold = "1"
+			app:layout_constraintRight_toLeftOf = "parent"
+			app:layout_constraintTop_toBottomOf = "@id/admin_lecturerEng_TV_id" />
+
+		<TextView
+			android:id = "@+id/group_title"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_margin = "8dp"
+			android:text = "@string/lecturer"
+			android:textSize = "12sp"
+			app:layout_constraintLeft_toLeftOf = "parent"
+			app:layout_constraintTop_toBottomOf = "@id/spinner_person" />
+
+		<Spinner
+			android:id = "@+id/spinner_group"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:layout_marginStart = "12dp"
+			android:layout_marginTop = "5dp"
+			android:layout_marginEnd = "12dp"
+			android:dropDownHeight = "100dp"
+			android:gravity = "center"
+			android:textStyle = "bold"
+			app:layout_constraintEnd_toEndOf = "parent"
+			app:layout_constraintStart_toStartOf = "parent"
+			app:layout_constraintTop_toBottomOf = "@+id/group_title" />
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id = "@+id/link_title"
+			android:layout_width = "0dp"
+			android:layout_height = "wrap_content"
+			android:layout_marginStart = "12dp"
+			android:layout_marginTop = "8dp"
+			android:layout_marginEnd = "12dp"
+			app:layout_constraintLeft_toLeftOf = "parent"
+			app:layout_constraintRight_toRightOf = "parent"
+			app:layout_constraintTop_toBottomOf = "@id/spinner_group">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id = "@+id/admin_edit_Link_id"
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:hint = "@string/link"
+				android:singleLine = "true"
+				android:textSize = "18sp"
+				tools:text = "course name" />
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id = "@+id/desc_en"
+			android:layout_width = "0dp"
+			android:layout_height = "wrap_content"
+			android:layout_marginStart = "12dp"
+			android:layout_marginTop = "8dp"
+			android:layout_marginEnd = "12dp"
+			app:layout_constraintLeft_toLeftOf = "parent"
+			app:layout_constraintRight_toRightOf = "parent"
+			app:layout_constraintTop_toBottomOf = "@id/link_title">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id = "@+id/admin_edit_DescriptionEng_id"
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:hint = "Description"
+				android:singleLine = "true"
+				android:textSize = "18sp"
+				tools:text = "course name" />
+		</com.google.android.material.textfield.TextInputLayout>
+
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id = "@+id/desc_hy"
+			android:layout_width = "0dp"
+			android:layout_height = "wrap_content"
+			android:layout_marginStart = "12dp"
+			android:layout_marginTop = "8dp"
+			android:layout_marginEnd = "12dp"
+			app:layout_constraintLeft_toLeftOf = "parent"
+			app:layout_constraintRight_toRightOf = "parent"
+			app:layout_constraintTop_toBottomOf = "@id/desc_en">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id = "@+id/admin_edit_DescriptionArm_id"
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:hint = "Նկարագրություն"
+				android:singleLine = "true"
+				android:textSize = "18sp"
+				tools:text = "course name" />
+		</com.google.android.material.textfield.TextInputLayout>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

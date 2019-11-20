@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name = "app_name">ACA</string>
+	<string name = "action_settings">Կարգավորումներ</string>
+	<string name = "cancelled">Չեղարկում</string>
+	<string name = "wellcome_text">Armenian Code Academy</string>
+	<string name = "description_text">Ինտենսիվ IT դասընթացներ հետագա աշխատանքի հնարավորություններով և մրցունակ աշխատավարձով։</string>
+
+	<string name = "next" translatable = "false">Հաջորդը</string>
+	<string name = "skip" translatable = "false">Բաց թողնել</string>
+
+	<string name = "play_again_desc" translatable = "false">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+	<string name = "play_again" translatable = "false">Play Again</string>
+
+	<string name = "todo">TODO</string>
+
+	<string name = "menu_home">Դասընթացներ</string>
+	<string name = "menu_company">Կազմակերպություն</string>
+	<string name = "menu_about">Ծրագրի մասին</string>
+	<string name = "menu_about_new">Մասին․․․</string>
+	<string name = "history">Այցելություն</string>
+	<string name = "menu_settings">Կարգավորումներ</string>
+
+	<string name = "snackbar">Սեղմեք ևս մեկ անգամ կամ սեղմեք "Փակել"</string>
+	<string name = "close">Փակել</string>
+	<string name = "register_text">Որպես ուսանող՝ այցելություն գրանցելու համար հարկավոր է նախապես հաստատել Ձեր անձը ստորև նշված տարբերակ(ներ)ի միջոցով</string>
+	<string name = "second_name">Ազգանուն</string>
+	<string name = "signup">Գրանցում</string>
+	<string name = "phone_number">Հեռախոսահամար</string>
+	<string name = "personal">Անձնական էջ</string>
+	<string name = "full_name">Անուն ազգանուն</string>
+	<string name = "email">էլ․ փոստ</string>
+	<string name = "save">Պահպանել</string>
+	<string name = "language">Լեզու</string>
+	<string name = "notifications">Զգուշացումներ</string>
+	<string name = "welcome_to_aca">Բարի Գալուստ ACA</string>
+	<!--<string name="student">Ուսանող</string>
+	<string name="admin_text">Ադմինիստրատոր</string>-->
+
+	<string-array name = "info_title">
+		<item>{Armenian Code Academy}</item>
+		<item>Դասընթացներ</item>
+		<item>Վկայական</item>
+		<item>Աշխատանք</item>
+	</string-array>
+
+	<string-array name = "info_description">
+		<item>Ինտենսիվ IT դասընթացներ հետագա աշխատանքի հնարավորություններով և մրցունակ աշխատավարձով։</item>
+		<item>Մենք առաջարկում ենք դասընթացներ ամենանորարար և պահանջված IT մասնագիտություններում։</item>
+		<item>Մեր վկայականները ճանաչվում և բարձր են գնահատվում հայաստանյան IT ընկերությունների կողմից։</item>
+		<item>Մեր շրջանավարտները ստանում են բարձր վարձատրվող աշխատանքի հրավերներ լավագույն IT ընկերություններից:</item>
+	</string-array>
+
+	<string-array name = "notification_type">
+		<item>Հաղորդագրություն</item>
+		<item>Զգուշացում</item>
+		<item>Նորություն</item>
+	</string-array>
+
+	<string-array name = "notification_segment">
+		<item>Բոլորը</item>
+		<item>Ադմինիստրատորներ</item>
+		<item>Դասախոսներ</item>
+		<item>Ուսանողներ</item>
+		<item>Դասեր</item>
+	</string-array>
+
+	<string name = "title_activity_notification">Հաղորդագրություններ</string>
+	<string name = "notification">Հաղորդագրություն</string>
+	<string name = "notification_segment">Օգտատերերի հատված</string>
+	<string name = "notification_type">Հաղորդագրության տեսակ</string>
+	<string name = "select_person">Ընտրել օգտատիրոջը</string>
+	<string name = "reception">Ընդունարանում Ձեզ սպասում են</string>
+	<string name = "new_student">Նոր ուսանող</string>
+	<string name = "admin_text">Ադմին</string>
+	<string name = "student">Ուսանող</string>
+	<string name = "please_choose_the_course">Խնդրում եմ ընտրել կուրսը</string>
+	<string name = "choose_status_for_visitor">Ընտրել այցելուի ստատուսը</string>
+	<string name = "please_choose_the_level">Ընտրել աստիճանը</string>
+	<string name = "first_anim">Սկզբնական անիմացիա</string>
+	<string name = "open_web_page">Բացել վեբ կայքը</string>
+	<string name = "licenses">Արտոնագրեր</string>
+	<string name = "administrator">Ադմինիստրատոր</string>
+	<string name = "alert">Զգուշացում</string>
+	<string name = "courses_levels">Դասընթացի մակարդակը</string>
+	<string name = "log_out">Դուրս գալ</string>
+	<string name = "title_activity_licenses">Արտոնագրեր</string>
+	<string name = "devs">Ծրագրավորողներ</string>
+
+	<string-array name = "statusVisitors">
+		<item>Ընտրել</item>
+		<item>Ուսանող</item>
+		<item>Ադմինիստրատոր</item>
+		<item>Դասախոս</item>
+		<item>QR</item>
+	</string-array>
+
+	<string name = "finish">Ավարտ</string>
+	<string name = "back">Վերադառնալ</string>
+	<string name = "code">{code}</string>
+	<string name = "company_text">Հ. 0.1.2.4.8.16.32 \nԷ. info@aca.am</string>
+	<string name = "doors_codes">Դռների կոդեր</string>
+	<string name = "select_course">Ընտրել դասը</string>
+	<string name = "new_visitor">Նոր ուսանող</string>
+	<string name = "waiting">Ընդունարանում Ձեզ սպասում են</string>
+	<string name = "history_start">ՍԿԻԶԲ</string>
+	<string name = "history_end">ԱՎԱՐՏ</string>
+	<string name = "courses">Դասընթացներ</string>
+	<string name = "add_course">Ավելացնել Դասընթաց</string>
+	<string name = "edit_course">Փոփոխել</string>
+
+	<string name = "visit">Գրանցված այցելություն</string>
+	<string name = "course">Դասընթաց</string>
+	<string name = "lecturer">Դասախոս</string>
+	<string name = "number_of_student">Ուսանողի հեռախոսահամար</string>
+	<string name = "attention">Ուշադրություն</string>
+	<string name = "end_visit">Ցանկանում ե՞ք ավարտել այցելությունը</string>
+	<string name = "yes">Այո</string>
+	<string name = "no">Ոչ</string>
+	<string name = "unknown_user">Անհայտ օգտատեր</string>
+	<string name = "visitors_list">Այցելուների ցանկ</string>
+	<string name = "messages">Հաղորդագրություններ</string>
+	<string name = "visit_time">Այցել. ժամ</string>
+	<string name = "end_time">Ավար. ժամը</string>
+	<string name = "duration">Տևողութ.</string>
+	<string name = "edit_student_profile">Խմբագրել այցելուի պրոֆիլը</string>
+	<string name = "call">Զանգել</string>
+	<string name = "call_title">Հնարավոր է նաև այս տարբերակով։ Մենք առաջարկում ենք զանգել։</string>
+	<string name = "like_to_call">Ցանկանում եք զանգե՞լ</string>
+	<string name = "empty_phone">Դատարկ հեռախոսահամար</string>
+	<string name = "empty_course">Անհայտ դաս</string>
+	<string name = "select_group">Ընտրել</string>
+	<string name = "no_phone_number">Այցելուն համարը չունի</string>
+	<string name = "course_name">Դասի անվանումը</string>
+	<string name = "link">Հղում</string>
+
+
+</resources>

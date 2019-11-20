@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "22469083043",
+    "firebase_url": "https://acafirst-a0a43.firebaseio.com",
+    "project_id": "acafirst-a0a43",
+    "storage_bucket": "acafirst-a0a43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22469083043:android:d958524d53e8ecaa0ba416",
+        "android_client_info": {
+          "package_name": "am.newway.aca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22469083043-e5ar1jdga7nfg3c6s87rn8ph0jk7c5ru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "am.newway.aca",
+            "certificate_hash": "05ec6c508d379ea39adc45c33485a8753f3b8adb"
+          }
+        },
+        {
+          "client_id": "22469083043-r8vppudm37jn78ptcralne04p2dpl093.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "am.newway.aca",
+            "certificate_hash": "d91a34da220ee7c447d57eb8bc34b5c9f52f28c8"
+          }
+        },
+        {
+          "client_id": "22469083043-veu6lljpp6ejtp7aun1104ma293ifbc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvaEDDoheBcn4vpTNk_0XT1KTldcJafVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22469083043-veu6lljpp6ejtp7aun1104ma293ifbc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

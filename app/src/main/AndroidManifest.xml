@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:tools = "http://schemas.android.com/tools"
+	package = "am.newway.aca">
+
+	<uses-permission android:name = "android.permission.INTERNET" />
+	<uses-permission android:name = "android.permission.CALL_PHONE" />
+	<uses-permission android:name = "android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name = "android.permission.RECEIVE_BOOT_COMPLETED" />
+
+	<application
+		android:name = ".App"
+		android:allowBackup = "true"
+		android:fullBackupContent = "true"
+		android:hardwareAccelerated = "true"
+		android:icon = "@mipmap/ic_launcher"
+		android:label =  "@string/app_name"
+		android:roundIcon = "@mipmap/ic_launcher_round"
+		android:supportsRtl = "true"
+		android:theme = "@style/AppTheme">
+
+		<receiver android:name = ".service.BootCompletedReceiver">
+			<intent-filter>
+				<action android:name = "android.intent.action.BOOT_COMPLETED" />
+				<action android:name = "android.intent.action.QUICKBOOT_POWERON" />
+			</intent-filter>
+		</receiver>
+
+		<activity
+			android:name = ".ui.admin.student.AdminStudentActivity"
+			android:label = "@string/visitors_list"
+			android:launchMode = "singleTop"
+			android:screenOrientation = "portrait"
+			android:theme = "@style/AppTheme.NoActionBar" />
+
+		<activity
+			android:name = ".ui.QrActivity"
+			android:screenOrientation = "portrait"
+			android:theme = "@style/AppTheme.NoActionBar">
+			<intent-filter>
+				<action android:name = "android.intent.action.MAIN" />
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name = ".firebase.FirebaseLogin"
+			android:label = "@string/signup"
+			android:screenOrientation = "portrait" />
+
+		<activity
+			android:name = ".MainActivity"
+			android:label = "@string/app_name"
+			android:launchMode = "singleTop"
+			android:screenOrientation = "portrait"
+			android:theme = "@style/AppTheme.NoActionBar">
+			<intent-filter>
+				<action android:name = "android.intent.action.MAIN" />
+				<action android:name = "android.intent.action.VIEW" />
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name = "com.journeyapps.barcodescanner.CaptureActivity"
+			android:banner = "@string/action_settings"
+			android:description = "@string/todo"
+			android:hardwareAccelerated = "true"
+			android:screenOrientation = "fullSensor"
+			tools:replace = "screenOrientation" />
+
+		<activity
+			android:name = ".ui.SplashScreen"
+			android:screenOrientation = "portrait"
+			android:theme = "@style/AppFullScreenTheme">
+			<intent-filter>
+				<action android:name = "android.intent.action.MAIN" />
+				<action android:name = "android.intent.action.VIEW" />
+
+				<category android:name = "android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name = ".ui.InfoActivity"
+			android:screenOrientation = "portrait"
+			android:theme = "@style/AppFullScreenTheme" />
+
+		<activity
+			android:name = ".ui.admin.AdminMessageActivity"
+			android:label = "@string/messages"
+			android:screenOrientation = "portrait"
+			android:theme = "@style/AppTheme.NoActionBar" />
+
+		<activity
+			android:name = ".ui.admin.AdminStudentEditActivity"
+			android:screenOrientation = "portrait"
+			android:label="@string/edit_student_profile"
+			android:theme = "@style/AppTheme.NoActionBar" />
+
+		<activity
+			android:name = ".ui.admin.AdminCourseActivity"
+			android:screenOrientation = "portrait"
+			android:theme = "@style/AppTheme.NoActionBar" />
+
+		<activity
+			android:name = ".ui.admin.AdminCourseEditActivity"
+			android:screenOrientation = "portrait"
+			android:theme = "@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode = "stateHidden|adjustResize" />
+
+		<service
+			android:name = ".service.AlertService"
+			android:exported = "true"
+			android:permission = "android.permission.BIND_JOB_SERVICE" />
+
+	</application>
+
+</manifest>

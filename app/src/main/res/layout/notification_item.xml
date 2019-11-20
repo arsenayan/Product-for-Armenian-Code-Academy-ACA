@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	xmlns:card_view = "http://schemas.android.com/apk/res-auto"
+	xmlns:fresco = "http://schemas.android.com/apk/res-auto"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:layout_width = "match_parent"
+	android:layout_height = "wrap_content">
+
+	<androidx.cardview.widget.CardView
+		android:layout_width = "match_parent"
+		android:layout_height = "0dp"
+		android:focusable = "true"
+		android:foreground = "?android:attr/selectableItemBackground"
+		app:layout_constraintLeft_toLeftOf = "parent"
+		app:layout_constraintTop_toTopOf = "parent"
+		card_view:cardBackgroundColor = "@color/colorPrimary"
+		card_view:cardCornerRadius = "4dp"
+		card_view:cardElevation = "2dp"
+		card_view:cardUseCompatPadding = "true">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:background = "@drawable/item_shape"
+			android:padding = "8dp">
+
+			<TextView
+				android:id = "@+id/text_name"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:layout_marginStart = "10dp"
+				android:textAlignment = "center"
+				android:textColor = "@color/white"
+				android:textSize = "20sp"
+				android:textStyle="italic"
+				app:layout_constraintRight_toRightOf = "parent"
+				app:layout_constraintTop_toTopOf = "parent"
+				tools:text = "Message" />
+
+			<TextView
+				android:id = "@+id/text_description"
+				android:layout_width = "0dp"
+				android:layout_height = "wrap_content"
+				android:layout_marginStart = "10dp"
+				android:layout_marginTop = "4dp"
+				android:textAlignment = "textStart"
+				android:textColor = "@color/white"
+				android:textSize = "16sp"
+				app:layout_constraintLeft_toRightOf = "@+id/date_time"
+				app:layout_constraintRight_toRightOf = "parent"
+				app:layout_constraintTop_toBottomOf = "@id/text_name" />
+
+			<com.facebook.drawee.view.SimpleDraweeView
+				android:id = "@+id/imageView"
+				android:layout_width = "48dp"
+				android:layout_height = "48dp"
+				app:layout_constraintBottom_toTopOf = "@id/date_time"
+				app:layout_constraintLeft_toLeftOf = "parent"
+				app:layout_constraintTop_toTopOf = "parent"
+				fresco:actualImageScaleType = "centerCrop"
+				fresco:backgroundImage = "@color/colorPrimaryLight"
+				fresco:fadeDuration = "300"
+				fresco:placeholderImage = "@mipmap/ic_launcher"
+				fresco:placeholderImageScaleType = "fitCenter"
+				fresco:roundAsCircle = "true"
+				fresco:roundingBorderColor = "@color/colorPrimaryDark" />
+
+			<TextView
+				android:id = "@+id/date_time"
+				android:layout_width = "80dp"
+				android:layout_height = "wrap_content"
+				android:layout_marginTop = "8dp"
+				android:textColor = "@color/white"
+				app:layout_constraintBottom_toBottomOf = "parent"
+				app:layout_constraintLeft_toLeftOf = "parent"
+				app:layout_constraintTop_toBottomOf = "@id/imageView"
+				tools:text = "22:34 01.05.2019" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
